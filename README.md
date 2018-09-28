@@ -1,4 +1,4 @@
-#### [파이썬 정리]
+#### [정리]
 
 <br>
 
@@ -20,6 +20,11 @@ regex_pattern = r"[.,]"  <br>
 
 <br>
 
+#### itertools
+product(A, B) returns the same as ((x,y) for x in A for y in B). <br>
+
+<br>
+
 #### MySQL
 select distinct city from station where id%2=0; <br>
 select count(CITY) - count(distinct CITY) from STATION; <br>
@@ -36,5 +41,9 @@ select distinct city from station where city regexp '^[aeiou].*[aeiou]$'; <br>
 select distinct city from station where city regexp '^[^aeiou]'; <br>
 
 > do not start with vowel [^] <- not의 의미 
+
+select name from students where marks > 75 order by right(name,3), id asc; <br>
+
+
 
 
