@@ -27,5 +27,14 @@ select city, length(city) from station where length(city)=(select min(length(cit
 
 > order by(defalut) is ascending <br>
 
+select distinct city from station where lower(substr(city,1,1)) in ('a','e','i','o','u'); <br>
+select distinct city from station where lower(substr(city,-1)) in ('a','e','i','o','u'); <br>
+select distinct city from station where city regexp '^[aeiou].*[aeiou]$'; <br>
+
+> first ^, last $
+
+select distinct city from station where city regexp '^[^aeiou]'; <br>
+
+> do not start with vowel 
 
 
