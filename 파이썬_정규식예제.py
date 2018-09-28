@@ -43,17 +43,17 @@ print(out2)
 
 
 # 위에 두개를 하나로 만들어 보자 
+# re.IGNORECASE : 대소문자 구분하지 않음 
 out = []
 for line in lines:
     try:
         tmp = re.search('GET(.*)200',line).group()
-        tmp = re.search('[^.].gif',tmp).group()
+        tmp = re.search('[^.].gif',tmp,re.IGNORECASE).group()
         out.append(tmp)
     except:
         pass 
 
 print(out)
-
 
 
 
