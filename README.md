@@ -16,5 +16,4 @@ re.search("[a-z]+",a).group()<br>
 
 #### 정규표현식 코마 & 마침표 두개 사용
 s = '100,000.000' <br>
-regex_pattern = r"\.|,"	 <br>
 regex_pattern = r"[.,]"  <br>
