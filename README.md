@@ -35,6 +35,6 @@ select distinct city from station where city regexp '^[aeiou].*[aeiou]$'; <br>
 
 select distinct city from station where city regexp '^[^aeiou]'; <br>
 
-> do not start with vowel 
+> do not start with vowel [^] <- not의 의미 
 
 
