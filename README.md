@@ -21,4 +21,11 @@ regex_pattern = r"[.,]"  <br>
 <br>
 
 #### MySQL
-select distinct city from station where id%2=0;<br>
+select distinct city from station where id%2=0; <br>
+select count(CITY) - count(distinct CITY) from STATION; <br>
+select city, length(city) from station where length(city)=(select min(length(city)) from station) order by city limit 1; <br>
+
+> order by(defalut) is ascending <br>
+
+
+
