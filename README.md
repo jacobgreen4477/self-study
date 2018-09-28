@@ -1,4 +1,6 @@
-#### [self-study]
+#### [파이썬 정리]
+
+<br>
 
 #### search vs match 
 a = "123abc" <br>
@@ -10,6 +12,7 @@ re.search("[a-z]+",a).group()<br>
 
 > 'abc' <br>
 
+<br>
 
 #### 정규표현식 코마 & 마침표 두개 사용
 s = '100,000.000' <br>
