@@ -49,3 +49,12 @@ select name from students where marks > 75 order by right(name,3), id asc; <br>
 select continent, name, rank() over(partition by continent order by gdp desc) as rank  from world <br>
 group by continent,name <br>
 order by continent desc, rank  <br>
+
+> case when then else end <br>
+
+select name,  <br>
+case  <br>
+when area > 500 then 1  <br>
+else 0  <br>
+end as tag  <br>
+from world  <br>
