@@ -45,7 +45,7 @@ select distinct city from station where city regexp '^[^aeiou]'; <br>
 select name from students where marks > 75 order by right(name,3), id asc; <br>
 
 
-> rank()
-select continent, name, rank() over(partition by continent order by gdp desc) as rank  from world
-group by continent,name
-order by continent desc, rank 
+> rank() <br>
+select continent, name, rank() over(partition by continent order by gdp desc) as rank  from world <br>
+group by continent,name <br>
+order by continent desc, rank  <br>
